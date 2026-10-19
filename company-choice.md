@@ -27,5 +27,5 @@ tengo ganas de construir un chatbot o una automatizacion que pueda ayudar. y con
 
 # Mi idea de agente de IA
 
-hacer un chatbot interno que busque candidatos mejor cualificados o con mejor curriculum de lo que estamos buscando
+hacer un chatbot interno que busque candidatos mejor cualificados o con mejor curriculum de lo que estamos buscando y arreglar la web desactualizada.
 una automatizacion de llamadas donde se conecte via whatsap y un excel donde no se pierdan llamadas y tengan un seguimiento via whatsap y mail o excel.
