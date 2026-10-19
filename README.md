@@ -1,9 +1,9 @@
-# AI Engineering Company Project — Student Template
+# Nexova Solutions Project — AI Engineering
 
 [![4Geeks Academy](https://img.shields.io/badge/4Geeks-Academy-blue)](https://4geeksacademy.com)
 [![AI Engineering](https://img.shields.io/badge/track-AI%20Engineering-green)](https://4geeksacademy.com/es/programas-de-carrera/ingenieria-ia)
 
-_Base template for transversal projects in the AI Engineering Career Program — 4Geeks Academy._
+_Transversal project for the AI Engineering Career Program — 4Geeks Academy._
 
 _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
@@ -11,22 +11,20 @@ _Estas instrucciones tambien estan disponibles en [espanol](./README.es.md)._
 
 ## Purpose
 
-This repository is the **starter template** for transversal projects. You will work on real company scenarios (Brasaland, TrackFlow, Nexova), building deliverables that map to course milestones (Web, Programming, Backend, Telemetry, RAG, Agents, Workflows, Real-time).
+This repository is dedicated to **Nexova Solutions**, a human resources and talent acquisition consultancy. It will contain AI Engineering projects for its recruitment, HR, customer support, marketing, and operations teams.
 
-- Create a template from this repository.
-- Replace the placeholder `CONTEXT.md` with your assigned company context.
-- Use `skills/` and the directory-level `README.md` files as working guidance.
+See [`CONTEXT.md`](./CONTEXT.md) for the selected company and initial project ideas, and [`nexova-BRIEFING.es.md`](./nexova-BRIEFING.es.md) for the full company briefing.
+Use `skills/` and the directory-level `README.md` files as working guidance.
 
 ---
 
 ## How to start
 
-1. **Use this repository as a template** and create your own project repo.
-2. **Clone** your repository (or open it in Codespaces).
-3. **Replace** `CONTEXT.md` with the full context for your assigned company.
-4. **Read this folder guide** and open the `README.md` of the folder you are working in.
-5. **Start implementing** in the right folder — do not dump everything in the root.
-6. **Document** what you add: each new app, service, agent, or pipeline gets a subfolder + README.
+1. Read [`CONTEXT.md`](./CONTEXT.md) and the Nexova briefing.
+2. Choose a concrete business problem to solve and define its scope.
+3. Read this guide and the `README.md` in the folder where you plan to work.
+4. Implement in the appropriate folder — do not dump everything in the root.
+5. Document what you add: each new app, service, agent, or pipeline gets a subfolder + README.
 
 ---
 
@@ -49,11 +47,10 @@ You are building **one company** across many milestones and projects. Each top-l
 
 ---
 
-## Current status of the template
+## Current project status
 
-> 💡 This repository currently provides a **base folder structure and documentation skeleton** only. It does not include runnable apps or global scripts yet.
+> 💡 This repository provides a **base folder structure and documentation skeleton**. It does not include runnable apps or global scripts yet. The company context is set to Nexova Solutions.
 >
-> - `CONTEXT.md` is a placeholder and must be replaced with your assigned company context.
 > - There is no root `AGENTS.md` yet.
 > - Shared package metadata exists in `packages/shared/package.json` (`@repo/shared-types`), but no workspace runner is configured at root.
 
@@ -67,7 +64,7 @@ Read the linked `README.md` inside each folder before you start coding there.
 
 | Path                         | Purpose                                                                   | What you do here                                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [`CONTEXT.md`](./CONTEXT.md) | Single source of truth for your company (Brasaland, TrackFlow, or Nexova) | **First step:** copy your assigned company briefing here so every app, agent, and prompt uses the same domain |
+| [`CONTEXT.md`](./CONTEXT.md) | Company context and areas of interest for Nexova Solutions | Reference it so every app, agent, and prompt uses the same domain |
 | `docker-compose.yml`         | Local dev orchestration for the whole stack                               | Keep at repo root — wires `services/`, databases, and other containers from one place                         |
 | `README.md` / `README.es.md` | This guide                                                                | Orientation — you are here                                                                                    |
 

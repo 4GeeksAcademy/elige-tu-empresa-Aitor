@@ -1,9 +1,9 @@
-# Proyecto de Compañía - Ingeniería de IA — Plantilla para estudiantes
+# Proyecto Nexova Solutions — Ingeniería de IA
 
 [![4Geeks Academy](https://img.shields.io/badge/4Geeks-Academy-blue)](https://4geeksacademy.com)
 [![AI Engineering](https://img.shields.io/badge/track-AI%20Engineering-green)](https://4geeksacademy.com/es/programas-de-carrera/ingenieria-ia)
 
-_Plantilla base para proyectos transversales del Programa de Carrera en Ingeniería de IA — 4Geeks Academy._
+_Proyecto transversal del Programa de Carrera en Ingeniería de IA — 4Geeks Academy._
 
 _These instructions are also available in [English](./README.md)._
 
@@ -11,22 +11,20 @@ _These instructions are also available in [English](./README.md)._
 
 ## Propósito
 
-Este repositorio es la **plantilla de inicio** para los proyectos transversales. Trabajarás con escenarios de empresas reales (Brasaland, TrackFlow, Nexova) construyendo entregables que se corresponden con los hitos del curso (Web, Programación, Backend, Telemetría, RAG, Agentes, Workflows, Tiempo real).
+Este repositorio está dedicado a **Nexova Solutions**, una consultora de recursos humanos y selección de talento. Aquí se desarrollarán proyectos de Ingeniería de IA para sus áreas de selección, RRHH, atención al cliente, marketing y operaciones.
 
-- Crea una plantilla a partir de este repositorio.
-- Reemplaza el `CONTEXT.md` placeholder por el contexto de tu empresa asignada.
-- Usa `skills/` y los `README.md` por carpeta como guía de trabajo.
+Consulta [`CONTEXT.md`](./CONTEXT.md) para ver la empresa elegida y las ideas iniciales del proyecto, y [`nexova-BRIEFING.es.md`](./nexova-BRIEFING.es.md) para leer el briefing completo.
+Usa `skills/` y los `README.md` por carpeta como guía de trabajo.
 
 ---
 
 ## Cómo empezar
 
-1. **Usa este repositorio como plantilla** y crea tu propio repo de proyecto.
-2. **Clona** tu repositorio (o ábrelo en Codespaces).
-3. **Reemplaza** `CONTEXT.md` con el contexto completo de tu empresa asignada.
-4. **Lee esta guía de carpetas** y abre el `README.md` de la carpeta en la que estés trabajando.
-5. **Empieza a implementar** en la carpeta correcta — no tires todo en la raíz.
-6. **Documenta** lo que añadas: cada app, servicio, agente o pipeline nuevo lleva subcarpeta + README.
+1. Lee [`CONTEXT.md`](./CONTEXT.md) y el briefing de Nexova.
+2. Elige un problema de negocio concreto para resolver y define su alcance.
+3. Lee esta guía y el `README.md` de la carpeta donde vayas a trabajar.
+4. Implementa en la carpeta adecuada — no tires todo en la raíz.
+5. Documenta lo que añadas: cada app, servicio, agente o pipeline nuevo lleva subcarpeta + README.
 
 ---
 
@@ -49,11 +47,10 @@ Estás construyendo **una sola empresa** a lo largo de muchos hitos y proyectos.
 
 ---
 
-## Estado actual de la plantilla
+## Estado actual del proyecto
 
-> 💡 Actualmente el repositorio ofrece solo una **estructura base de carpetas y documentación**. Todavía no incluye aplicaciones ejecutables ni scripts globales en la raíz.
+> 💡 El repositorio ofrece una **estructura base de carpetas y documentación**. Todavía no incluye aplicaciones ejecutables ni scripts globales en la raíz. El contexto de empresa ya está configurado para Nexova Solutions.
 >
-> - `CONTEXT.md` es un placeholder y debe sustituirse por el contexto de la empresa asignada.
 > - No existe todavía un `AGENTS.md` en la raíz.
 > - Existe metadata del paquete compartido en `packages/shared/package.json` (`@repo/shared-types`), pero aún no hay runner de workspace en raíz.
 
@@ -67,7 +64,7 @@ Lee el `README.md` enlazado dentro de cada carpeta antes de empezar a programar 
 
 | Ruta                         | Propósito                                                            | Qué haces aquí                                                                                               |
 | ---------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| [`CONTEXT.md`](./CONTEXT.md) | Fuente única de verdad de tu empresa (Brasaland, TrackFlow o Nexova) | **Primer paso:** copia aquí el briefing de tu empresa para que apps, agentes y prompts usen el mismo dominio |
+| [`CONTEXT.md`](./CONTEXT.md) | Contexto y áreas de interés de Nexova Solutions | Fuente de referencia para que apps, agentes y prompts usen el mismo dominio |
 | `docker-compose.yml`         | Orquestación local de todo el stack                                  | Mantener en la raíz del repo — conecta `services/`, bases de datos y otros contenedores desde un solo lugar  |
 | `README.md` / `README.es.md` | Esta guía                                                            | Orientación — estás aquí                                                                                     |
 
