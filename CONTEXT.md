@@ -1,16 +1,17 @@
-# Your company context
+# Contexto de empresa: Nexova Solutions
 
-**Replace this file** with the CONTEXT for your assigned company:
+## Empresa elegida
 
-- **Brasaland** — `CONTEXT-brasaland-briefing.md` (grilled food restaurant chain, Colombia + Florida)
-- **TrackFlow** — `CONTEXT-trackflow-briefing.md` (last-mile delivery and warehouse, Mexico + Spain)
-- **Nexova** — `CONTEXT-nexova-briefing.md` (HR consulting and talent acquisition, Chile + Argentina)
-- **HealthCore** — `CONTEXT-healthcore-briefing.md` (outpatient healthcare clinic network, US + UK)
+La empresa seleccionada para este proyecto es **Nexova Solutions**, una consultora de recursos humanos y selección de talento con áreas de operaciones de selección, formación corporativa, atención al cliente, ventas, marketing, RRHH y tecnología.
 
-Your instructor or milestone materials will point you to the correct CONTEXT file. Copy its contents here so that all project work and AI assistance use the same domain data, field names, and constraints.
+El briefing completo, con la descripción de la empresa, sus equipos y sus necesidades, está en [`nexova-BRIEFING.es.md`](./nexova-BRIEFING.es.md). La motivación personal y las ideas iniciales del proyecto están en [`company-choice.md`](./company-choice.md).
 
----
+## Áreas de interés
 
-_Until you add your context, keep this placeholder so the repo structure is clear._
+- **Operaciones de Selección:** explorar un asistente que busque y ordene candidatos según los requisitos de una vacante. Las recomendaciones deben ayudar al equipo de selección, no sustituir su revisión y decisión.
+- **Recursos Humanos:** explorar un chatbot interno para responder preguntas sobre políticas y beneficios. Puede manejar información sensible, por lo que cualquier implementación debe proteger los datos personales y limitar su acceso.
+- **Atención al Cliente:** explorar un chatbot de soporte con búsqueda en una base de conocimiento y seguimiento de incidencias.
+- **Marketing:** mejorar la web corporativa desactualizada.
+- **Seguimiento de llamadas:** explorar una automatización que registre llamadas y facilite su seguimiento por WhatsApp y correo electrónico.
 
-_Estas instrucciones también están disponibles en [español](./CONTEXT.es.md)._
+Estas son ideas iniciales, no requisitos cerrados. Las decisiones de alcance y tecnología se definirán al diseñar cada proyecto.
