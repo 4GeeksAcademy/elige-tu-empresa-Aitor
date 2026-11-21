@@ -13,6 +13,7 @@ Actualizar este archivo antes de cada commit.
 - [x] Reglas en `.agents/rules/`.
 - [x] Skill `skills/repo-structure-audit/`.
 - [x] Rutas `./uis/website` y `./uis/backoffice` creadas, solo con README. `./services` ya existía.
+- [x] Rama de trabajo `feature/agent-memory-bank` y flujo de entrega de `AGENTS.md` ejecutado (rutas, README, sin secretos, diff revisado).
 
 ## Pendiente
 
