@@ -51,7 +51,7 @@ Estás construyendo **una sola empresa** a lo largo de muchos hitos y proyectos.
 
 > 💡 El repositorio ofrece una **estructura base de carpetas y documentación**. Todavía no incluye aplicaciones ejecutables ni scripts globales en la raíz. El contexto de empresa ya está configurado para Nexova Solutions.
 >
-> - No existe todavía un `AGENTS.md` en la raíz.
+> - El [`AGENTS.md`](./AGENTS.md) raíz, [`memory-bank/`](./memory-bank/) y [`.agents/rules/`](./.agents/rules/) definen cómo trabajan los agentes en este repo.
 > - Existe metadata del paquete compartido en `packages/shared/package.json` (`@repo/shared-types`), pero aún no hay runner de workspace en raíz.
 
 ---

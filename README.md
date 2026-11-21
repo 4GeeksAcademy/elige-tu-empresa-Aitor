@@ -51,7 +51,7 @@ You are building **one company** across many milestones and projects. Each top-l
 
 > 💡 This repository provides a **base folder structure and documentation skeleton**. It does not include runnable apps or global scripts yet. The company context is set to Nexova Solutions.
 >
-> - There is no root `AGENTS.md` yet.
+> - Root [`AGENTS.md`](./AGENTS.md), [`memory-bank/`](./memory-bank/) and [`.agents/rules/`](./.agents/rules/) define how agents work in this repo.
 > - Shared package metadata exists in `packages/shared/package.json` (`@repo/shared-types`), but no workspace runner is configured at root.
 
 ---
