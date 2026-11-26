@@ -15,6 +15,7 @@ Actualizar este archivo antes de cada commit.
 - [x] Rutas `./uis/website` y `./uis/backoffice` creadas. `./services` ya existía.
 - [x] Landing corporativa inicial creada en `./uis/website/index.html` con HTML5 y Tailwind CDN.
 - [x] Metadatos SEO, Open Graph, Twitter Cards y Schema.org `Organization` añadidos a la landing.
+- [x] Formulario comercial responsive creado en `./uis/website/application.html`.
 - [x] Resumen del trabajo documentado en `Plan/plan.md`.
 - [x] Rama de trabajo `feature/agent-memory-bank` y flujo de entrega de `AGENTS.md` ejecutado (rutas, README, sin secretos, diff revisado).
 
