@@ -1,7 +1,8 @@
 # `uis/website`
 
-Web pública corporativa de Nexova Solutions.
+Web pública corporativa de Nexova Solutions, con información sobre sus servicios de selección, soporte al cliente externalizado y formación corporativa.
 
-- **Estado:** sin implementar. Solo reserva la ruta oficial.
-- **Contexto:** el briefing (Marketing y Comunicación, Carmen Ruiz) describe una web de 2019, lenta y poco accesible. Ver [`nexova-BRIEFING.es.md`](../../nexova-BRIEFING.es.md) y [`CONTEXT.md`](../../CONTEXT.md).
-- **Pendiente de decidir:** tecnología y cómo ejecutarla (documentar aquí al implementarla).
+- **Tecnología:** HTML5 y Tailwind CSS mediante CDN.
+- **Página de inicio:** [`index.html`](./index.html).
+- **Ejecución:** abrir `index.html` en un navegador; requiere conexión a internet para cargar Tailwind y las imágenes.
+- **Contexto:** ver [`nexova-BRIEFING.es.md`](../../nexova-BRIEFING.es.md) y [`CONTEXT.md`](../../CONTEXT.md).
