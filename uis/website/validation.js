@@ -95,7 +95,7 @@
   ];
 
   const stateClasses = [
-    "border-slate-300",
+    "border-slate-500",
     "focus:border-teal-700",
     "focus:ring-teal-700",
     "border-red-600",
@@ -188,6 +188,11 @@
       field.error.textContent = "";
       field.error.classList.add("hidden");
       field.control.classList.remove(...stateClasses);
+      field.control.classList.add(
+        "border-slate-500",
+        "focus:border-teal-700",
+        "focus:ring-teal-700",
+      );
     });
 
     clearFeedback();

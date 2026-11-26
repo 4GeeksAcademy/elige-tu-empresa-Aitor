@@ -17,6 +17,7 @@ Actualizar este archivo antes de cada commit.
 - [x] Metadatos SEO, Open Graph, Twitter Cards y Schema.org `Organization` añadidos a la landing.
 - [x] Formulario comercial responsive creado en `./uis/website/application.html`.
 - [x] Validación de campos en tiempo real y simulación de envío añadidas en `./uis/website/validation.js`.
+- [x] Correcciones de contraste, foco de teclado y textos alternativos aplicadas tras auditar la web.
 - [x] Resumen del trabajo documentado en `Plan/plan.md`.
 - [x] Rama de trabajo `feature/agent-memory-bank` y flujo de entrega de `AGENTS.md` ejecutado (rutas, README, sin secretos, diff revisado).
 
