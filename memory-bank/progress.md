@@ -12,14 +12,19 @@ Actualizar este archivo antes de cada commit.
 - [x] `AGENTS.md` en la raíz.
 - [x] Reglas en `.agents/rules/`.
 - [x] Skill `skills/repo-structure-audit/`.
-- [x] Rutas `./uis/website` y `./uis/backoffice` creadas, solo con README. `./services` ya existía.
+- [x] Rutas `./uis/website` y `./uis/backoffice` creadas. `./services` ya existía.
+- [x] Landing corporativa inicial creada en `./uis/website/index.html` con HTML5 y Tailwind CDN.
+- [x] Metadatos SEO, Open Graph, Twitter Cards y Schema.org `Organization` añadidos a la landing.
+- [x] Formulario comercial responsive creado en `./uis/website/application.html`.
+- [x] Validación de campos en tiempo real y simulación de envío añadidas en `./uis/website/validation.js`.
+- [x] Correcciones de contraste, foco de teclado y textos alternativos aplicadas tras auditar la web.
 - [x] Resumen del trabajo documentado en `Plan/plan.md`.
 - [x] Rama de trabajo `feature/agent-memory-bank` y flujo de entrega de `AGENTS.md` ejecutado (rutas, README, sin secretos, diff revisado).
 
 ## Pendiente
 
 - [ ] Decidir y construir el primer proyecto concreto (ver áreas en `projectbrief.md`).
-- [ ] Contenido real de `./uis/website`, `./uis/backoffice` y `./services`.
+- [ ] Completar contenido del backoffice y los servicios; ampliar la web según el alcance acordado.
 
 ## Decisiones abiertas
 

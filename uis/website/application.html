@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cuéntanos qué necesita tu empresa. Contacta con Nexova Solutions para selección de talento, outsourcing de soporte o formación corporativa."
+    />
+    <title>Solicitud para empresas | Nexova Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="validation.js" defer></script>
+  </head>
+  <body class="bg-slate-50 font-sans text-slate-900 antialiased">
+    <a
+      href="#contenido"
+      class="sr-only z-50 rounded-md bg-white px-4 py-3 text-slate-900 focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+    >
+      Saltar al contenido
+    </a>
+
+    <header class="border-b border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-5 sm:px-8 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <a
+          href="index.html"
+          class="rounded text-xl font-bold tracking-tight text-slate-950 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:ring-offset-2"
+          aria-label="Nexova Solutions, inicio"
+        >
+          Nexova <span class="text-teal-700">Solutions</span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm font-medium text-slate-700">
+            <li>
+              <a
+                class="rounded hover:text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                href="index.html#servicios"
+              >
+                Servicios
+              </a>
+            </li>
+            <li>
+              <a
+                class="rounded hover:text-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                href="index.html#nosotros"
+              >
+                Por qué Nexova
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" tabindex="-1" class="px-5 py-12 sm:px-8 sm:py-16">
+      <div class="mx-auto max-w-3xl">
+        <div class="mb-8">
+          <a
+            href="index.html"
+            class="text-sm font-semibold text-teal-800 underline decoration-teal-300 underline-offset-4 hover:text-teal-950 focus:outline-none focus:ring-2 focus:ring-teal-700"
+          >
+            Volver a Nexova Solutions
+          </a>
+          <p class="mt-8 text-sm font-bold uppercase tracking-[0.16em] text-teal-800">
+            Contacto para empresas
+          </p>
+          <h1 class="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+            Cuéntanos qué necesita tu empresa
+          </h1>
+          <p class="mt-4 leading-7 text-slate-600">
+            Comparte algunos detalles del proyecto y el servicio que te interesa.
+            Nuestro equipo podrá conocer mejor tu solicitud.
+          </p>
+        </div>
+
+        <form
+          id="application-form"
+          method="post"
+          novalidate
+          class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8"
+        >
+          <p
+            id="form-feedback"
+            class="mb-6 hidden rounded-lg border p-4 text-sm"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></p>
+          <fieldset class="space-y-5">
+            <legend class="mb-5 text-xl font-bold text-slate-950">
+              Datos de la empresa y contacto
+            </legend>
+
+            <div>
+              <label for="company" class="mb-2 block text-sm font-semibold text-slate-800">
+                Empresa <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                autocomplete="organization"
+                minlength="2"
+                required
+                aria-describedby="company-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              />
+              <p id="company-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+
+            <div>
+              <label for="contact-name" class="mb-2 block text-sm font-semibold text-slate-800">
+                Persona de contacto <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <input
+                id="contact-name"
+                name="contact_name"
+                type="text"
+                autocomplete="name"
+                minlength="3"
+                required
+                aria-describedby="contact-name-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              />
+              <p id="contact-name-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+
+            <div>
+              <label for="email" class="mb-2 block text-sm font-semibold text-slate-800">
+                Email corporativo <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="work email"
+                inputmode="email"
+                required
+                aria-describedby="email-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              />
+              <p id="email-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+
+            <div>
+              <label for="phone" class="mb-2 block text-sm font-semibold text-slate-800">
+                Teléfono <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                inputmode="tel"
+                required
+                aria-describedby="phone-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              />
+              <p id="phone-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+
+            <div>
+              <label for="country" class="mb-2 block text-sm font-semibold text-slate-800">
+                País <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <input
+                id="country"
+                name="country"
+                type="text"
+                autocomplete="country-name"
+                required
+                aria-describedby="country-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              />
+              <p id="country-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+
+            <div>
+              <label for="industry" class="mb-2 block text-sm font-semibold text-slate-800">
+                Sector empresarial <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <input
+                id="industry"
+                name="industry"
+                type="text"
+                placeholder="Ej.: tecnología, retail o servicios financieros"
+                required
+                aria-describedby="industry-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              />
+              <p id="industry-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-10 space-y-5 border-t border-slate-200 pt-8">
+            <legend class="mb-5 text-xl font-bold text-slate-950">
+              Necesidades de tu empresa
+            </legend>
+
+            <div>
+              <label for="service" class="mb-2 block text-sm font-semibold text-slate-800">
+                Servicio solicitado <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <select
+                id="service"
+                name="service"
+                required
+                aria-describedby="service-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 bg-white px-4 py-3 text-slate-950 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              >
+                <option value="" selected disabled>Selecciona un servicio</option>
+                <option value="headhunting">Headhunting</option>
+                <option value="outsourcing">Outsourcing de soporte</option>
+                <option value="training">Formación corporativa</option>
+                <option value="multiple">Múltiples servicios</option>
+              </select>
+              <p id="service-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+
+            <div>
+              <label for="employee-count" class="mb-2 block text-sm font-semibold text-slate-800">
+                Número aproximado de empleados
+                <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <input
+                id="employee-count"
+                name="employee_count"
+                type="number"
+                min="1"
+                step="1"
+                inputmode="numeric"
+                required
+                aria-describedby="employee-count-error"
+                aria-invalid="false"
+                class="min-h-12 w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+              />
+              <p id="employee-count-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+
+            <div>
+              <label for="project-needs" class="mb-2 block text-sm font-semibold text-slate-800">
+                Necesidades del proyecto
+                <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+              <textarea
+                id="project-needs"
+                name="project_needs"
+                rows="6"
+                minlength="20"
+                required
+                aria-describedby="project-needs-error"
+                aria-invalid="false"
+                class="w-full rounded-lg border border-slate-500 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                placeholder="Describe brevemente qué necesita tu empresa."
+              ></textarea>
+              <p id="project-needs-error" class="mt-2 hidden text-sm text-red-700"></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-10 border-t border-slate-200 pt-8">
+            <legend class="mb-4 text-xl font-bold text-slate-950">Privacidad</legend>
+            <div class="flex items-start gap-3">
+              <input
+                id="privacy-consent"
+                name="privacy_consent"
+                type="checkbox"
+                value="accepted"
+                required
+                aria-describedby="privacy-consent-error"
+                aria-invalid="false"
+                class="mt-1 size-5 shrink-0 rounded border-slate-500 text-teal-800 focus:ring-2 focus:ring-teal-700"
+              />
+              <label for="privacy-consent" class="text-sm leading-6 text-slate-700">
+                He leído y acepto la política de privacidad de Nexova Solutions.
+                <span aria-hidden="true" class="text-red-700">*</span>
+              </label>
+            </div>
+            <p id="privacy-consent-error" class="mt-2 hidden text-sm text-red-700"></p>
+          </fieldset>
+
+          <div class="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+            <button
+              type="reset"
+              class="inline-flex min-h-12 items-center justify-center rounded-lg border border-slate-500 px-5 py-3 font-semibold text-slate-700 transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:ring-offset-2"
+            >
+              Limpiar formulario
+            </button>
+            <button
+              type="submit"
+              class="inline-flex min-h-12 items-center justify-center rounded-lg bg-teal-800 px-5 py-3 font-semibold text-white transition hover:bg-teal-900 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:ring-offset-2"
+            >
+              Enviar solicitud
+            </button>
+          </div>
+        </form>
+
+        <p class="mt-6 text-sm leading-6 text-slate-600">
+          Nexova Solutions cuenta con sede en Valencia, España, y una oficina de
+          expansión en Miami, Florida.
+        </p>
+      </div>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-sm text-slate-600 sm:px-8 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <a
+          href="index.html"
+          class="rounded font-bold text-slate-950 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:ring-offset-2"
+        >
+          Nexova <span class="text-teal-700">Solutions</span>
+        </a>
+        <p>Valencia, España · Miami, Florida</p>
+      </div>
+    </footer>
+  </body>
+</html>
