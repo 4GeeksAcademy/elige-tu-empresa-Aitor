@@ -9,6 +9,7 @@
     />
     <title>Solicitud para empresas | Nexova Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="validation.js" defer></script>
   </head>
   <body class="bg-slate-50 font-sans text-slate-900 antialiased">
     <a
@@ -73,7 +74,19 @@
           </p>
         </div>
 
-        <form method="post" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+        <form
+          id="application-form"
+          method="post"
+          novalidate
+          class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8"
+        >
+          <p
+            id="form-feedback"
+            class="mb-6 hidden rounded-lg border p-4 text-sm"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></p>
           <fieldset class="space-y-5">
             <legend class="mb-5 text-xl font-bold text-slate-950">
               Datos de la empresa y contacto
@@ -88,9 +101,13 @@
                 name="company"
                 type="text"
                 autocomplete="organization"
+                minlength="2"
                 required
+                aria-describedby="company-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               />
+              <p id="company-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
 
             <div>
@@ -102,9 +119,13 @@
                 name="contact_name"
                 type="text"
                 autocomplete="name"
+                minlength="3"
                 required
+                aria-describedby="contact-name-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               />
+              <p id="contact-name-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
 
             <div>
@@ -118,8 +139,11 @@
                 autocomplete="work email"
                 inputmode="email"
                 required
+                aria-describedby="email-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               />
+              <p id="email-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
 
             <div>
@@ -133,8 +157,11 @@
                 autocomplete="tel"
                 inputmode="tel"
                 required
+                aria-describedby="phone-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               />
+              <p id="phone-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
 
             <div>
@@ -147,8 +174,11 @@
                 type="text"
                 autocomplete="country-name"
                 required
+                aria-describedby="country-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               />
+              <p id="country-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
 
             <div>
@@ -161,8 +191,11 @@
                 type="text"
                 placeholder="Ej.: tecnología, retail o servicios financieros"
                 required
+                aria-describedby="industry-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               />
+              <p id="industry-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
           </fieldset>
 
@@ -179,6 +212,8 @@
                 id="service"
                 name="service"
                 required
+                aria-describedby="service-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-950 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               >
                 <option value="" selected disabled>Selecciona un servicio</option>
@@ -187,6 +222,7 @@
                 <option value="training">Formación corporativa</option>
                 <option value="multiple">Múltiples servicios</option>
               </select>
+              <p id="service-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
 
             <div>
@@ -202,8 +238,11 @@
                 step="1"
                 inputmode="numeric"
                 required
+                aria-describedby="employee-count-error"
+                aria-invalid="false"
                 class="min-h-12 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
               />
+              <p id="employee-count-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
 
             <div>
@@ -215,10 +254,14 @@
                 id="project-needs"
                 name="project_needs"
                 rows="6"
+                minlength="20"
                 required
+                aria-describedby="project-needs-error"
+                aria-invalid="false"
                 class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-950 placeholder:text-slate-500 focus:border-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-700"
                 placeholder="Describe brevemente qué necesita tu empresa."
               ></textarea>
+              <p id="project-needs-error" class="mt-2 hidden text-sm text-red-700"></p>
             </div>
           </fieldset>
 
@@ -231,6 +274,8 @@
                 type="checkbox"
                 value="accepted"
                 required
+                aria-describedby="privacy-consent-error"
+                aria-invalid="false"
                 class="mt-1 size-5 shrink-0 rounded border-slate-300 text-teal-800 focus:ring-2 focus:ring-teal-700"
               />
               <label for="privacy-consent" class="text-sm leading-6 text-slate-700">
@@ -238,6 +283,7 @@
                 <span aria-hidden="true" class="text-red-700">*</span>
               </label>
             </div>
+            <p id="privacy-consent-error" class="mt-2 hidden text-sm text-red-700"></p>
           </fieldset>
 
           <div class="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
